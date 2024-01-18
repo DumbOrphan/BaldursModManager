@@ -46,6 +46,7 @@
 		2912B37F2B4CE6F50074AF2D /* FileUtility+DefaultModSettingsLsx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileUtility+DefaultModSettingsLsx.swift"; sourceTree = "<group>"; };
 		2912B3812B4CEB4D0074AF2D /* FileUtility+ReplaceModSettingsLsx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileUtility+ReplaceModSettingsLsx.swift"; sourceTree = "<group>"; };
 		2912B3832B4CFE770074AF2D /* WelcomeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeDetailView.swift; sourceTree = "<group>"; };
+		295095842B59CB7900249BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2979B3F92B4CA86100F3A227 /* XmlAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlAttributes.swift; sourceTree = "<group>"; };
 		2979B3FC2B4CA89D00F3A227 /* LsxParserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LsxParserDelegate.swift; sourceTree = "<group>"; };
 		2979B3FF2B4CA92300F3A227 /* FileUtility+BackupModSettingsLsx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileUtility+BackupModSettingsLsx.swift"; sourceTree = "<group>"; };
@@ -166,6 +167,7 @@
 		29DD55E72B4875EC003729AD /* BaldursModManager */ = {
 			isa = PBXGroup;
 			children = (
+				295095842B59CB7900249BF0 /* Info.plist */,
 				29DD55E82B4875EC003729AD /* BaldursModManagerApp.swift */,
 				29DD55EA2B4875EC003729AD /* ContentView.swift */,
 				291181DC2B4B277700B76A26 /* Views */,
@@ -415,8 +417,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BaldursModManager/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Justin Bush 2024";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -444,8 +447,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BaldursModManager/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Justin Bush 2024";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
