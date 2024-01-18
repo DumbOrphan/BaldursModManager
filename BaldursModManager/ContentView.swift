@@ -30,6 +30,8 @@ struct ContentView: View {
   @State private var showConfirmationText = false
   @State private var confirmationMessage = ""
   
+  @State private var droppedFolderPath: String = ""
+  
   private let modItemManager = ModItemManager.shared
   @ObservedObject var debug = Debug.shared
   
@@ -170,6 +172,21 @@ struct ContentView: View {
           self.showPermissionsView = true
         }
       }
+    }
+    .onDrop(of: ["public.file-url"], isTargeted: nil) { providers in
+      for provider in providers {
+        provider.loadItem(forTypeIdentifier: "public.file-url") { (data, error) in
+          if let data = data as? Data,
+             let url = URL(dataRepresentation: data, relativeTo: nil) {
+            let folderPath = url.path
+            DispatchQueue.main.async {
+              self.droppedFolderPath = folderPath
+              print(droppedFolderPath)
+            }
+          }
+        }
+      }
+      return true
     }
   }
   
